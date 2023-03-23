@@ -66,6 +66,7 @@ class Game:
 
 	def update(self):
 		# update the player first :P
+		self.handle_input()
 		self.player.update()
 		# update everything in the object list next
 		for object in self.object_list:
